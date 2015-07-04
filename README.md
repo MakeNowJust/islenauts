@@ -1,3 +1,4 @@
+[41, 7, 7]
 # islenauts
 
 islenauts is a color set for anything.
@@ -5,20 +6,20 @@ islenauts is a color set for anything.
 
 ## palette
 
-| name | # | RGB |
-|:----:|---|:---:|
-| black | ![black](http://placehold.it/16x16/162324?text=%20) | `#162324` |
-| white | ![white](http://placehold.it/16x16/EDF2F2?text=%20) | `#EDF2F2` |
-| gray1 | ![gray1](http://placehold.it/16x16/B5C9C9?text=%20) | `#B5C9C9` |
-| gray2 | ![gray2](http://placehold.it/16x16/839191?text=%20) | `#839191` |
-| gray3 | ![gray3](http://placehold.it/16x16/565959?text=%20) | `#565959` |
-| gray4 | ![gray4](http://placehold.it/16x16/262727?text=%20) | `#262727` |
-| red | ![red](http://placehold.it/16x16/F04341?text=%20) | `#F04341` |
-| green | ![green](http://placehold.it/16x16/A4FA87?text=%20) | `#A4FA87` |
-| yellow | ![yellow](http://placehold.it/16x16/F0E09E?text=%20) | `#F0E09E` |
-| magenta | ![magenta](http://placehold.it/16x16/F06EE2?text=%20) | `#F06EE2` |
-| blue | ![blue](http://placehold.it/16x16/7377FA?text=%20) | `#7377FA` |
-| cyan | ![cyan](http://placehold.it/16x16/74E3DA?text=%20) | `#74E3DA` |
+|                           #                           |  name   |    RGB    |
+|:-----------------------------------------------------:|:-------:|:---------:|
+| ![black  ](http://placehold.it/16x16/162324?text=%20) |  black  | `#162324` |
+| ![white  ](http://placehold.it/16x16/EDF2F2?text=%20) |  white  | `#EDF2F2` |
+| ![gray1  ](http://placehold.it/16x16/B5C9C9?text=%20) |  gray1  | `#B5C9C9` |
+| ![gray2  ](http://placehold.it/16x16/839191?text=%20) |  gray2  | `#839191` |
+| ![gray3  ](http://placehold.it/16x16/565959?text=%20) |  gray3  | `#565959` |
+| ![gray4  ](http://placehold.it/16x16/262727?text=%20) |  gray4  | `#262727` |
+| ![red    ](http://placehold.it/16x16/F04341?text=%20) |   red   | `#F04341` |
+| ![green  ](http://placehold.it/16x16/A4FA87?text=%20) |  green  | `#A4FA87` |
+| ![yellow ](http://placehold.it/16x16/F0E09E?text=%20) | yellow  | `#F0E09E` |
+| ![magenta](http://placehold.it/16x16/F06EE2?text=%20) | magenta | `#F06EE2` |
+| ![blue   ](http://placehold.it/16x16/7377FA?text=%20) |  blue   | `#7377FA` |
+| ![cyan   ](http://placehold.it/16x16/74E3DA?text=%20) |  cyan   | `#74E3DA` |
 
 
 
