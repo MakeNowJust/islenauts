@@ -1,4 +1,3 @@
-[41, 7, 7]
 # islenauts
 
 islenauts is a color set for anything.

@@ -11,7 +11,6 @@ palette = File.read("palette.toml")
   .map{|name, color| ["http://placehold.it/16x16/#{ color[1..-1]}?text=%20", name, color] }
 
 palette_size = palette[0].size.times.to_a.map{|i| palette.map{|x|x[i].size}.max}
-p palette_size
 
 print ERB.new(DATA.read).result(binding)
 
