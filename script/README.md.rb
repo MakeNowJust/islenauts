@@ -8,6 +8,10 @@ require 'erb'
 palette = File.read("palette.toml")
   .split(/\n/)
   .map{|line| line.split(/=/).map(&:strip).tap{|e|e[1]=e[1][1..-2]}}
+  .map{|name, color| ["http://placehold.it/16x16/#{ color[1..-1]}?text=%20", name, color] }
+
+palette_size = palette[0].size.times.to_a.map{|i| palette.map{|x|x[i].size}.max}
+p palette_size
 
 print ERB.new(DATA.read).result(binding)
 
@@ -19,9 +23,9 @@ islenauts is a color set for anything.
 
 ## palette
 
-| name | # | RGB |
-|:----:|---|:---:|
-<% palette.each do |name, color| %>| <%= name %> | ![<%= name %>](http://placehold.it/16x16/<%= color[1..-1] %>?text=%20) | `<%= color %>` |
+| <%= "#".center(5 + palette_size[0] + palette_size[1]) %> | <%= "name".center(palette_size[1]) %> | <%= "RGB".center(2 + palette_size[2]) %> |
+|:<%= "-" * (5 + palette_size[0] + palette_size[1]) %>:|:<%= "-" * palette_size[1] %>:|:<%= "-" * (2 + palette_size[2]) %>:|
+<% palette.each do |url, name, color| %>| ![<%= name.ljust(palette_size[1]) %>](<%= url %>) | <%= name.center(palette_size[1]) %> | `<%= color.center(palette_size[2]) %>` |
 <% end %>
 
 
