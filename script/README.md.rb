@@ -19,8 +19,8 @@ islenauts is a color set for anything.
 
 ## palette
 
-| name | | RGB |
-|:----:|-|:---:|
+| name | # | RGB |
+|:----:|---|:---:|
 <% palette.each do |name, color| %>| <%= name %> | ![<%= name %>](http://placehold.it/16x16/<%= color[1..-1] %>?text=%20) | `<%= color %>` |
 <% end %>
 

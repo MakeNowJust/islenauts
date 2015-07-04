@@ -5,8 +5,8 @@ islenauts is a color set for anything.
 
 ## palette
 
-| name | | RGB |
-|:----:|-|:---:|
+| name | # | RGB |
+|:----:|---|:---:|
 | black | ![black](http://placehold.it/16x16/162324?text=%20) | `#162324` |
 | white | ![white](http://placehold.it/16x16/EDF2F2?text=%20) | `#EDF2F2` |
 | gray1 | ![gray1](http://placehold.it/16x16/B5C9C9?text=%20) | `#B5C9C9` |
