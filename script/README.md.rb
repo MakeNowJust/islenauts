@@ -35,7 +35,6 @@ islenauts is a color set for anything.
 <% palette.each do |url, name, color| %>| ![<%= name.ljust(palette_size[1]) %>](<%= url %>) | <%= name.center(palette_size[1]) %> | `<%= color.center(palette_size[2]) %>` |
 <% end %>
 
-
 ## author
 
 TSUYUSATO Kitsune <mailto:make.just.on@gmail.com>

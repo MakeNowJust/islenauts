@@ -23,7 +23,6 @@ islenauts is a color set for anything.
 | ![cyan   ](http://placehold.it/16x16/74E3DA?text=%20) |  cyan   | `#74E3DA` |
 
 
-
 ## author
 
 TSUYUSATO Kitsune <mailto:make.just.on@gmail.com>
