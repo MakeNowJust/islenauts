@@ -1,7 +1,19 @@
+#!/usr/bin/env ruby
+#         _
+# o      | |
+#     ,  | |  _   _  _    __,        _|_  ,
+# |  / \_|/  |/  / |/ |  /  |  |   |  |  / \_
+# |_/ \/ |__/|__/  |  |_/\_/|_/ \_/|_/|_/ \/
+#
+# Show colors in your terminal
+# $ ./script/show_in_terminal.rb      # 8bit color mode
+# $ ./script/show_in_terminal.rb true # 24bit true color mode
+
 true_color = ARGV[0] == "true"
 
 palette = File.read("palette.toml")
   .split(/\n/)
+  .reject{|line| line =~ /^\s*$|^#/}
   .map{|line| line.split(/=/).map(&:strip).tap{|e|e[1]=e[1][1..-2]}}
 
 def rgb_to_256(color)

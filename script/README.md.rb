@@ -1,12 +1,18 @@
 #!/usr/bin/env ruby
-
+#         _
+# o      | |
+#     ,  | |  _   _  _    __,        _|_  ,
+# |  / \_|/  |/  / |/ |  /  |  |   |  |  / \_
+# |_/ \/ |__/|__/  |  |_/\_/|_/ \_/|_/|_/ \/
+#
 # README.md generater
-# ./script/README.md.rb > README.md
+# $ ./script/README.md.rb > README.md
 
 require 'erb'
 
 palette = File.read("palette.toml")
   .split(/\n/)
+  .reject{|line| line =~ /^\s*$|^#/}
   .map{|line| line.split(/=/).map(&:strip).tap{|e|e[1]=e[1][1..-2]}}
   .map{|name, color| ["http://placehold.it/16x16/#{ color[1..-1]}?text=%20", name, color] }
 
