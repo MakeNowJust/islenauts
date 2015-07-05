@@ -1,5 +1,7 @@
 # islenauts
 
+![islenauts logo](https://raw.github.com/MakeNowJust/islenauts/master/islenauts.svg)
+
 islenauts is a color set for anything.
 
 
