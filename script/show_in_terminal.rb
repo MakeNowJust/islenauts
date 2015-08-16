@@ -28,7 +28,7 @@ max_len = palette.map{|name,*|name.size}.max
 
 palette.each do |name, color|
   unless true_color
-    puts "#{name.ljust max_len} : \e[48;5;#{rgb_to_256 color}m #{color} \e[0;38;5;#{rgb_to_256 color}m #{color} \e[0m"
+    puts "#{name.ljust max_len} : \e[48;5;#{rgb_to_256 color}m #{color} \e[0;38;5;#{rgb_to_256 color}m #{color} #{rgb_to_256 color} \e[0m"
   else
     rgb = color[1..-1].scan(/../).map{|c|c.to_i 16}.join ";"
     puts "#{name.ljust max_len} : \e[48;2;#{rgb}m #{color} \e[0;38;2;#{rgb}m #{color} \e[0m"
